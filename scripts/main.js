@@ -54,12 +54,12 @@ const projectImage3 = document.querySelector('#project-image-3')
 const prevImage3 = document.querySelector('#prev-image-3')
 const nextImage3 = document.querySelector('#next-image-3')
 
-const slides3 = ["./images/bzn-home.png", "./images/bzn-employees.png", "./images/bzn-departments.png", "./images/bzn-computers.png", "./images/bzn-training-programs.png"]
+const slides3 = ["./images/bzn-home.png", "./images/bzn-employees.png", "./images/bzn-departments.png", "./images/bzn-computers.png", "./images/bzn-training-programs.png", "./images/bzn-past-training-programs.png", "./images/bzn-past-training-program-detail.png"]
 
 let index3 = 0
 
 nextImage3.addEventListener('click', () => {
-    if(index3 === 4) {index3 = 0}
+    if(index3 === 6) {index3 = 0}
     else {
         index3 += 1
     }
@@ -67,7 +67,7 @@ nextImage3.addEventListener('click', () => {
 })
 
 prevImage3.addEventListener('click', () => {
-    if(index3 === 0) {index3 = 4}
+    if(index3 === 0) {index3 = 6}
     else {
         index3 -= 1
     }
