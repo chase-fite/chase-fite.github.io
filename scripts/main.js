@@ -74,3 +74,27 @@ prevImage3.addEventListener('click', () => {
     projectImage3.src = slides3[index3]
 })
 
+// project display 4
+const projectImage4 = document.querySelector('#project-image-4')
+const prevImage4 = document.querySelector('#prev-image-4')
+const nextImage4 = document.querySelector('#next-image-4')
+
+const slides4 = ["./images/supplymate-inventory.png", "./images/supplymate-item-detail.png", "./images/supplymate-add-item.png", "./images/supplymate-pending-sr.png", "./images/supplymate-sr-detail.png", "./images/supplymate-csr.png"]
+
+let index4 = 0
+
+nextImage4.addEventListener('click', () => {
+    if(index4 === 5) {index4 = 0}
+    else {
+        index4 += 1
+    }
+    projectImage4.src = slides4[index4]
+})
+
+prevImage4.addEventListener('click', () => {
+    if(index4 === 0) {index4 = 5}
+    else {
+        index4 -= 1
+    }
+    projectImage4.src = slides4[index4]
+})
