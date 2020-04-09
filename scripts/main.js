@@ -79,7 +79,7 @@ const projectImage4 = document.querySelector('#project-image-4')
 const prevImage4 = document.querySelector('#prev-image-4')
 const nextImage4 = document.querySelector('#next-image-4')
 
-const slides4 = ["./images/supplymate-inventory.png", "./images/supplymate-item-detail.PNG", "./images/supplymate-add-item.png", "./images/supplymate-pending-sr.png", "./images/supplymate-sr-detail.png", "./images/supplymate-csr.png"]
+const slides4 = ["./images/supplymate-inventory.png", "./images/supplymate-item-detail.png", "./images/supplymate-add-item.png", "./images/supplymate-pending-sr.png", "./images/supplymate-sr-detail.png", "./images/supplymate-csr.png"]
 
 let index4 = 0
 
