@@ -84,6 +84,7 @@ const slides4 = ["./images/supplymate-inventory.png", "./images/supplymate-item-
 let index4 = 0
 
 nextImage4.addEventListener('click', () => {
+    console.log('index4: ', index4)
     if(index4 === 5) {index4 = 0}
     else {
         index4 += 1
@@ -92,6 +93,7 @@ nextImage4.addEventListener('click', () => {
 })
 
 prevImage4.addEventListener('click', () => {
+    console.log('index4: ', index4)
     if(index4 === 0) {index4 = 5}
     else {
         index4 -= 1
