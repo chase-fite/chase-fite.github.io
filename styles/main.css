@@ -1,248 +1,257 @@
-.project-container {
-    display: flex;
-    flex-direction: column;
-    /* border: 1px solid black; */
-    margin: 1px;
+/* GENERAL */
+
+html, body {
+    overflow-x:hidden 
 }
 
-.last-link {
-    border-right: none !important;
-}
-
-#mobile-location {
-    visibility: hidden !important;
-}
-
-@media only screen and (max-width: 550px) {
-    .last-link {
-        border-right: 1px solid black !important;
-    }
-
-    #full-page-location {
-        visibility: hidden !important;
-    }
-
-    #mobile-location {
-        visibility: visible !important;
-        border-right: none;
-    }
-
-    .navbar {
-        height: 65px;
-    }
-}
-
-@media only screen and (min-width: 550px) {
-    .section {
-        padding-right: 40px;
-        padding-left: 40px;
-    }
-}
-
-@media only screen and (min-width: 700px) {
-    .main-container {
-        display: flex;
-    }
-
-    .main-container > div {
-        flex-basis: 45%;
-    }
-}
-
-@media only screen and (max-width: 780px) {
-    .experience-container {
-        flex-direction: column;
-    }
-
-    .about-me {
-        flex-direction: column;
-    }
-}
-
-@media only screen and (min-width: 1500px) {
-    .project-container {
-        flex-direction: row;
-    }
-}
-
-.project-container > div {
-    /* border: 1px solid black; */
-    margin: 1px;
+body {
+    margin: 0;
 }
 
 .section {
-    /* border: 1px solid black; */
+    font-family: 'Open Sans';
+    margin-bottom: 30px;
+}
+
+h2 {
     text-align: center;
-    margin-top: 10px;
+    font-family: 'Quattrocento';
+    margin-top: 20px;
+}
+
+hr {
+    margin: 0 20px;
+}
+
+.lower-hr {
     margin-bottom: 10px;
 }
 
-/* .main-container {
-    border: 1px solid black;
-    margin: 1px;
-}
+/* NAVBAR */
 
-.main-container > div {
-    border: 1px solid black;
-    margin: 1px;
-} */
-
-.about-me {
-    justify-content: center;
-}
-
-.about-me > div {
-    margin: 10px;
-}
-
-.about-me-and-edu {
-    text-align: left;
-}
-
-.job-summary {
-    text-align: left;
-}
-
-.contact {
-    padding-bottom: 20px;
-}
-
-.tech-icon-container {
+.navbar {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 40px;
-}
-
-.tech-icon {
-    height: 70px;
-    width: 70px;
-    margin: 10px;
-}
-
-.tech-div {
-    width: 90px;
-    height: 120px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-.tech-link {
-    border-bottom: none;
-}
-
-.project-image {
-    width: 93%;
-}
-
-.project-container {
-    flex-wrap: wrap;
+    font-size: 16px;
+    font-family: sans-serif;
+    background-color: #343a40;
+    margin-left: 0;
     justify-content: center;
 }
 
-.experience-container > div {
-    margin: 10px;
+.navbar > a {
+    padding: 10px;
+    text-decoration: none;
+    color: #007bff !important;
 }
 
-.project-container > div {
-    flex-basis: 45%;
-    margin: 10px;
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-.project-image-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.fa {
-    margin-left: 5px;
-    margin-right: 5px;
-}
+/* BANNER */
 
 .banner {
+    margin-top: 38px;
+    height: 538px;
     background-image: url('/images/dual-monitor-original.jpg');
     background-size: cover;
-    height: 538px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 0;
     justify-content: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;    
 }
 
-.intro {
-    color: white;
+.banner > div {
+    text-align: center;
+}
+
+.name {
+    color: #007bff;
     font-size: 80px;
     font-family: 'Trade Winds';
 }
 
-.sub-intro {
-    color: white;
+.profession {
+    color: #007bff;
     font-size: 40px;
     font-family: 'Open Sans';
 }
 
-.offset-color {
-    background-color: #f2f2f2;
+/* ABOUT ME */
+
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.section {
-    font-family: 'Open Sans';
+.about-me > div {
+    min-width: 280px;
+    max-width: 500px;
+    margin: 10px;
 }
 
-h2 {
-    font-family: 'Quattrocento';
+.profile-picture {
+    min-width: 300px;
+    max-width: 500px;
 }
 
-.navbar > div > a {
-    text-decoration: none !important;
-    padding-right: 5px;
-    padding-left: 5px;
-    border-right: 1px solid black;
+.profile-picture > img {
+    width: 100%;
 }
 
-.location {
-    padding: 0 5px;
+.about-me > div > div {
+    margin: 10px 0;
 }
 
-a.anchor {
-    display: block;
-    position: relative;
-    top: -40px;
-    visibility: hidden;
+.education {
+    padding-top: 10px;
 }
 
-.fa {
-    cursor: default !important;
+/* WORK EXPERIENCE */
+
+.work-experience {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.project-placeholder {
-    padding-top: 100px;
-    padding-bottom: 100px;
+.work-experience > div {
+    margin: 0 20px 20px;
 }
 
-.project-description {
-    text-align: left;
-    margin-left: 3.5%;
-    margin-right: 3.5%;
-    margin-top: 40px;
-    margin-bottom: 40px;
+.job-summary {
+    min-width: 280px;
+    max-width: 400px;
+}
+
+.work-experience > div > p, h3, h4 {
+    margin: 5px 0;
+    min-width: 280px;
+    max-width: 400px;
+    text-align: center;
+    padding-right: 20px;
+}
+
+h3, h4 {
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+/* PROJECTS */
+
+.projects > div > div > img {
+    width: 85%;
 }
 
 .project-title {
     margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
 }
 
-h5 {
-    margin-bottom: 0 !important;
+.project-description {
+    margin: 5px 40px 60px;
 }
 
-h3 {
-    margin-top: 8px !important;
+.project-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.profile-img {
-    height: 20px !important;
+.project-container > i {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.fa {
+    cursor: default !important;
+    margin: 0px 5px !important;
+}
+
+/* TECHNOLOGIES */
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.technologies > div {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    justify-content: flex-end;
+    width: 100px;
+    height: 140px;
+    text-align: center;
+}
+
+.technologies > div > a > img {
+    width: 80px;
+}
+
+/* CONTACT */
+
+.contact {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.contact > div {
+    margin: 10px 0;
+    font-size: 20px;
+    font-family: 'Open Sans';
+}
+
+.contact > div > a {
+    text-decoration: none;
+}
+
+/* DYNAMIC CHANGES */
+
+@media only screen and (max-width: 552px) {
+    .banner {
+        margin-top: 56px;
+    }
+
+    .project-title {
+        margin: 5px 10px;
+    }
+
+    .project-description {
+        margin: 0 10px 10px;
+    }
+
+    .navbar > a {
+        padding: 5px 10px;
+    }
+
+    
+}
+
+@media only screen and (min-width: 1250px) {
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .projects > div {
+        width: 50%;
+    }
 }
