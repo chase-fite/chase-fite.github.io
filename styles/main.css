@@ -37,18 +37,15 @@ hr {
     background-color: #343a40;
     margin-left: 0;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .navbar > a {
     padding: 10px;
     text-decoration: none;
     color: #007bff !important;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
 }
 
 /* BANNER */
