@@ -122,11 +122,12 @@ hr {
 
 .work-experience > div {
     margin: 0 20px 20px;
-}
-
-.job-summary {
+    border: 1px solid gray;
+    padding: 15px;
     min-width: 280px;
     max-width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    border-radius: 25px;
 }
 
 .work-experience > div > p, h3, h4 {
