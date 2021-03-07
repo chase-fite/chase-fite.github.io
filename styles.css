@@ -44,6 +44,17 @@ a {
     text-decoration: none;
 }
 
+a.anchor {
+    display: block;
+    position: relative;
+    top: -20px;
+    visibility: hidden;
+}
+
+#a-about-me {
+    top: -90px;
+}
+
 /*NAVBAR*/
 
 #navbar {
