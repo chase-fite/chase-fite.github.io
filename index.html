@@ -3,267 +3,295 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quattrocento|Trade+Winds&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Trade+Winds&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
     <title>Document</title>
 </head>
 <body>
+
+    <div id="navbar-mobile">
+        <div class="material-icons" id="navbar-mobile__menu">menu</div>    
+        <div id="navbar-mobile__title">Portfolio</div>
+    </div>
+
+    <div id="dropdown-menu" class="hidden">
+        <a href="#about-me">About Me</a>
+        <a href="#experience">Work Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#technology">Technology</a>
+        <a href="#contact">Contact</a>
+        <a href="./downloads/Chase Fite Resume.pdf">Resume</a>
+    </div>
+
+    <div id="navbar" class="hidden">
+        <a href="#about-me">About Me</a>
+        <a href="#experience">Work Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#technology">Technology</a>
+        <a href="#contact">Contact</a>
+        <a href="./downloads/Chase Fite Resume.pdf">Resume</a>
+    </div>
+
+    <div id="title">
+        <div id="name">Chase Fite</div>
+        <div id="occupation">Full Stack Software Developer</div>
+    </div>
     
-    <div class="main-container">
+    <div id="banner">
+        <img src="./images/lake-1920x1080.png" alt="" id="banner-img">
+    </div>
 
-        <div class="navbar" id="navbar">
-            <a href="#about-me">About Me</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#technologies">Technologies</a>
-            <a href="#contact">Contact</a>
-            <a class="resume-link" href="./downloadable/Chase Fite Resume.pdf">Resume</a>
-        </div>
-
-        <div class="banner">
-                <div class="name">CHASE FITE</div>
-                <div class="profession">Software Developer</div>
-        </div>
-        
-        <div class="section">
-            <a class="anchor" id="about-me"></a>
+    <div id="main-container">
+        <div id="about-me" class="section">
             <h2>About Me</h2>
-            <hr class="lower-hr"/>
-            <div class="about-me">
-                <div class="profile-picture">
-                    <img src="./images/portfolio-site-img.png" alt="" srcset="">
+            <div id="about-me--flex">
+                <div id="about-me__image-container" class="container">
+                    <img src="images/portfolio-img.png">
                 </div>
-                <div class="summary-and-education">
-                    <div>I have always been fascinated with computers and the internet growing up. I discovered a passion for programming while I was recovering from a knee injury sustained during my time in the United States Marine Corp. I found myself drawn into software development more and more as I studied Python and watched MIT OpenCourseWare lectures on computer science. I also spent over a year at Kennesaw State University pursing a computer science degree before realizing that the traditional college route would not give me the practical skills that I felt would be vital to my success. Nashville Software School has a proven track record of producing developers with the skills to hit the ground running.</div>
-                    <div class="education">
-                        <div class="edu-title">Nashville Software School, 2019-2020</div>
-                        <div class="edu-detail">&bull; Full-Time, Software Development Bootcamp</div>
-                        <div class="edu-title">Kennesaw State University, 2016-2017</div>
-                        <div class="edu-detail">&bull; Computer Science</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="section">
-            <hr/>
-            <a class="anchor" id="experience"></a>
-            <h2>Work Experience</h2>
-            <hr class="lower-hr"/>
-            <div class="work-experience">
-                <div>
-                    <h3>Tucker Connelly Consulting</h3>
-                    <h4>Junior Software Engineer</h4>
-                    <p>July 2020 - August 2020</p>
-                    <div class="job-summary">Worked on a contract with Acelerate. The application was centered around webscraping and providing data services to customers in the form of a dashboard. I primarily worked with the Node.js, Puppeteer web scraping modules, but also spent some time updating small portions of the React, Next.js UI. Utilized Rambler and Postico for database table changes. </div>
-                </div>
-                <div>
-                    <h3>Nashville Software School</h3>
-                    <h4>Teaching Assistant</h4>
-                    <p>April 2020 - June 2020</p>
-                    <div class="job-summary">Contributed to a team of three instructors teaching a remote, 3 month, Python/Django back-end class. Lead short class lectures regularly and participated in guided discussions. Most of my time was spent guiding students toward code solutions, and answering questions. Occasionally testing technology prior to class projects.</div>
-                </div>
-                <div>
-                    <h3>Nashville Software School</h3>
-                    <h4>Student Software Developer</h4>
-                    <p>Sep. 2019 - March 2020</p>
-                    <div class="job-summary">Immersive, six month web development bootcamp focused on full-stack applications, collaboration, and individual competency. The course started with HTML, CSS, and JavaScript, but quickly moved on to React and JSON Server for building dynamic, single page web applications. The second half of the course covers Object Oriented Programming in Python, building APIs with Django REST framework and using SQL to interact with relational databases. The course culminates with a solo project building a full-stack web application.</div>
-                </div>
-                <div>
-                    <h3>Quarry Services<h3>
-                    <h4>Logistics Specialist</h4>
-                    <p>Sep. 2018 - June 2019</p>
-                    <div class="job-summary">Quarry Services is a small company that mainly deals in contract drilling, providing drillers and associated services to quarries across the Southeast U.S. I assisted with managing and organizing their inventory warehouse. I also coordinated with mechanics and drillers to deliver drill parts and consumables or assist with drill maintenance.</div>
-                </div>
-                <div>
-                    <h3>United States Marine Corps</h3>
-                    <h4>Tank Crewman</h4>
-                    <p>Aug. 2011 - May 2016</p>
-                    <div class="job-summary">The Marine Corps gave me a variety of work experience. While I was primarily a tank crewman, I also worked as an administrative clerk. I managed a company sized logistics project. I held a student leadership billet in tank school, and was selected for a national recon competition out of 90 Marines. I worked on large and small teams with diverse people. I worked in harsh environments during high tempo operations. I learned a lot, and I'm thankful for the opportunity to experience these things and serve my country.</div>
+                <div id="about-me__intro" class="container">
+                    Hi, I'm Chase. I am a full-stack software developer and problem solver. After
+                    serving almost five years in the military, I knew that I wanted a career that
+                    was going to challenge my mind. I've been intrigued by computers ever since
+                    my parents brought one home in the 90s. So As my enlistment started to come to an
+                    end I decided to look into programming, and I was hooked. I spent a year and a
+                    half at Kennesaw State University pursuing a Computer Science Degree, but
+                    ultimately was unsatisfied with the education I was receiving. I did some
+                    research and decided to attend Nashville Software School's full-time web development
+                    bootcamp, and it was a great decision as they gave me the skills needed to
+                    hit the ground running. Following graduation, I was offered a teaching assistant
+                    contract with the school. It was very rewarding to help guide a cohort through
+                    a three month Python / Django back-end course, many of whom are working as software
+                    developers now. I then worked a short software development contract with a
+                    start-up in California which was mainly focused on web scraping. I believe my experience
+                    has helped me become a well rounded person, and I am eager to help
+                    businesses succeed through quality software.
                 </div>
             </div>
         </div>
-        
-        <div class="section">
+        <div id="experience" class="section">
             <hr/>
-            <a class="anchor" id="projects"></a>
+            <h2>Experience</h2>
+            <div class="container">
+                <div>United States Marine Corps (Tank Crewman)</div>
+                <div class="date-range">Aug 2011 - May 2016</div>
+                <ul>
+                    <li>Professionalism</li>
+                    <li>Reliability</li>
+                    <li>Time Management</li>
+                    <li>Attention to Detail</li>
+                    <li>Communication</li>
+                    <li>Teamwork</li>
+                    <li>Leadership</li>
+                    <li>Perseverance</li>
+                    <li>Working with a diverse group of people</li>
+                </ul>
+            </div>
+            <div class="container">
+                <div>Self-study</div>
+                <div class="date-range">Aug 2015 - May 2016</div>
+                <ul>
+                    <li>MIT Computer Science lectures</li>
+                    <li>Python</li>
+                </ul>
+            </div> 
+            <div>
+                <div>Kennesaw State University</div>
+                <div class="date-range">Aug 2016 - Dec 2017</div>
+                <ul>
+                    <li>Java Programming I & II</li>
+                </ul>
+            </div> 
+            <div class="container">
+                <div>Quarry Services</div>
+                <div class="date-range">Sep 2018 - Jun 2019</div>
+                <ul>
+                    <li>
+                        Worked very hard for this company at 60+ hours a week
+                    </li>
+                    <li>
+                        Started with a pure delivery role, but after earning their trust I quickly
+                        gained added responsibility including organizational projects, assisting
+                        with drill maintenance, and managing their warehouse autonomously
+                    </li>
+                </ul>
+            </div> 
+            <div class="container">
+                <div>Nashville Software School (Student)</div>
+                <div class="date-range">Sep 2019 - Apr 2020</div>
+                <ul>
+                    <li>
+                        Foundation in full-stack web development
+                    </li>
+                    <li>
+                        HTML, CSS, JavaScript, React, Python, Django, JSON, SQL, Git, VSCode
+                    </li>
+                    <li>
+                        Collaboration, planning, sprints, retrospectives, solo projects, presentations
+                    </li>
+                </ul>
+            </div> 
+            <div class="container">
+                <div>Nashville Software School (Teaching Assistant)</div>
+                <div class="date-range">Apr 2020 - Jun 2020</div>
+                <ul>
+                    <li>
+                        Teaching a variety of programming topics
+                    </li>
+                    <li>
+                        Helping students debug their code
+                    </li>
+                    <li>
+                        Volunteered for a project to implement automated Gmail drafts in the school's
+                        pre-work tracking software
+                    </li>
+                </ul>
+            </div> 
+            <div class="container">
+                <div>Tucker Connelly Consulting (Junior Software Engineer)</div>
+                <div class="date-range">Jul 2020 - Aug 2020</div>
+                <ul>
+                    <li>
+                        Analysis, refactoring, and debugging
+                    </li>
+                    <li>
+                        Most of my work was with Node and Puppeteer in a variety of web scraping modules
+                    </li>
+                    <li>
+                        Implemented a recursive function to select minimum required options from deep
+                        JSON tree structures
+                    </li>
+                    <li>
+                        Occasional UI fixes in Nextjs
+                    </li>
+                    <li>
+                        Exposure to Docker, Kubernetes, Concourse, Arena, Terraform, PostgreSQL, Rambler,
+                        Jest, and Vim
+                    </li>
+                </ul>
+            </div> 
+            <div class="container">
+                <div>Self-study</div>
+                <div class="date-range">Aug 2020 - Present</div>
+                <ul>
+                    <li>
+                        Data Structures and Algorithms
+                    </li>
+                    <li>
+                        Leetcode practice
+                    </li>
+                    <li>
+                        Vim
+                    </li>
+                    <li>
+                        Work flow improvement
+                    </li>
+                    <li>
+                        Responsive web design
+                    </li>
+                    <li>
+                        Websockets
+                    </li>
+                </ul>
+            </div> 
+        </div>
+        <div id="projects" class="section">
+            <hr/>
             <h2>Projects</h2>
-            <hr class="lower-hr"/>
-            <div class="projects">
-                <div>
-                    <div class="project-container">
-                        <i id="prev-image-1" style="font-size:36px" class="fa">&#xf104;</i>
-                        <img id="project-image-1" class="project-image" src="./images/level-up-home-2.png" alt="" srcset="">
-                        <i id="next-image-1" style="font-size:36px" class="fa">&#xf105;</i>
-                    </div>
-                    <div class="project-title">Level Up (NSS Solo Project, Front-end Capstone)</div>
-                    <div class="project-description">Level Up is a tool designed to help people that are interested in fitness organize, track, and visualize the data from their workouts. It is a responsive web  application primarily designed for mobile with user experience in mind. As a front-end project, it was built primarily with JavaScript and React, utilizing JSON Server for persistent data.</div>
+            <div class="container project">
+                <div class="project__title">SupplyMate</div>
+                <div class="project__description">
+                    SupplyMate is an inventory and logistics management system. It was
+                    designed for any company that maintains an inventory and has remote
+                    employees that pull from that inventory regularly. This was built
+                    with a React front-end and a Django REST Framework API with a SQLite
+                    database.
                 </div>
-                <div>
-                    <div class="project-container">
-                        <i id="prev-image-2" style="font-size:36px" class="fa">&#xf104;</i>
-                        <img id="project-image-2" class="project-image" src="./images/rn-articles-2.png" alt="" srcset="">
-                        <i id="next-image-2" style="font-size:36px" class="fa">&#xf105;</i>
-                    </div>
-                    <div class="project-title">Reactive Nutshell (NSS Group Project)</div>
-                    <div class="project-description">Reactive Nutshell is a social media web application based on organizing daily tasks, events, and news articles. This was a front-end project built in JavaScript and React, utilizing JSON Server for persistent data. I designed and implemented the messages section of the application and collaborated with a teammate to setup 'add a friend from message' functionality.</div>
+                <a class="project__link" href="https://github.com/chase-fite/supplymate-client">github.com/chase-fite/supplymate-client</a>
+                <a class="project__link" href="https://github.com/chase-fite/supplymate-api">github.com/chase-fite/supplymate-api</a>
+            </div>
+            <div class="container project">
+                <div class="project__title">Level Up</div>
+                <div class="project__description">
+                    Level Up is a workout organizer and data visualization tool. A user
+                    can create their own exercises and workouts in a variety of formats.
+                    It was designed as a responsive web app so users could easily access
+                    their workout plans from their phone. A user can also record their
+                    workout results and view graphs of their performance over a selected
+                    time period. This app was built with React and uses JSON-Server as a
+                    pseudo REST API to persist data.
                 </div>
-                <div>
-                    <div class="project-container">
-                        <i id="prev-image-3" style="font-size:36px" class="fa">&#xf104;</i>
-                        <img id="project-image-3" class="project-image" src="./images/bzn-home.png" alt="" srcset="">
-                        <i id="next-image-3" style="font-size:36px" class="fa">&#xf105;</i>
-                    </div>
-                    <div class="project-title">Bangazon Workforce Management (NSS Group Project)</div>
-                    <div class="project-description">The workforce management side of Bangazon is an administration tool for large companies allowing them to track and manage employees, departments, computers, and training programs. This project was built in Python using the Django framework and MVT (model view template) design pattern. I mainly worked on tickets involving deparment view and creation along with past training training programs and attendees.</div>
-                </div>
-                <div>
-                    <div class="project-container">
-                        <i id="prev-image-4" style="font-size:36px" class="fa">&#xf104;</i>
-                        <img id="project-image-4" class="project-image" src="./images/supplymate-inventory.png" alt="" srcset="">
-                        <i id="next-image-4" style="font-size:36px" class="fa">&#xf105;</i>
-                    </div>
-                    <div class="project-title">SupplyMate (NSS Solo Project, Back-end Capstone)</div>
-                    <div class="project-description">SupplyMate is an inventory and supply request management system. Through this web application logistics employees can manage the inventory and coordinate deliveries while remote employees can view the inventory and easily make supply requests. This is a full-stack project using a sqlite database, Python with Django REST framework for the api, and JavaScript with React for the user interface.</div>
-                </div>
+                <a class="project__link" href="https://github.com/chase-fite/level-up">github.com/chase-fite/level-up</a>
             </div>
         </div>
-        
-        <div class="section">
+        <div id="technology" class="section">
             <hr/>
-            <a class="anchor" id="technologies"></a>
-            <h2>Technologies</h2>
-            <hr class="lower-hr"/>
-            <div class="technologies">
+            <h2>Technology</h2>
+            <div id="technology__image-container">
                 <div>
-                    <a href="https://www.javascript.com">
-                        <img src="images/javascript.png">
+                    <a href="https://www.javascript.com/">
+                    <img class="tech-img" src="images/javascript.png">
                     </a>
-                    <p>JavaScript</p>
+                    <div>JavaScript</div>
+                </div> 
+                <div>
+                    <a href="https://nodejs.org/en/">
+                    <img class="tech-img" src="images/nodejs-icon.png">
+                    </a>
+                    <div>Node</div>
                 </div>
                 <div>
                     <a href="https://reactjs.org/">
-                        <img src="images/reactJS.png">
+                    <img class="tech-img" src="images/reactJS.png">
                     </a>
-                    <p>React JS</p>
-                </div>
-                <div>
-                    <a href="https://nextjs.org/">
-                        <img src="images/nextjs-icon.png">
-                    </a>
-                    <p>Next.js</p>
-                </div>
-                <div>
-                    <a href="https://git-scm.com/">
-                        <img src="images/git.png">
-                    </a>
-                    <p>Git</p>
-                </div>
-                <div>
-                    <a href="https://github.com/">
-                        <img src="images/github.png">
-                    </a>
-                    <p>GitHub</p>
-                </div>
-                <div>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">
-                        <img src="images/html5.png">
-                    </a>
-                    <p>HTML5</p>
-                </div>
-                <div>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3">
-                        <img src="images/css3.png">
-                    </a>
-                    <p>CSS3</p>
-                </div>
-                <div>
-                    <a href="https://webpack.js.org/">
-                        <img src="images/webpack.png">
-                    </a>
-                    <p>Webpack</p>
-                </div>
-                <div>
-                    <a href="https://www.npmjs.com/">
-                        <img src="images/npm.png">
-                    </a>
-                    <p>NPM</p>
-                </div>
-                <div>
-                    <a href="https://code.visualstudio.com/">
-                        <img src="images/vsc.png">
-                    </a>
-                    <p>Visual Studio Code</p>
+                    <div>React</div>
                 </div>
                 <div>
                     <a href="https://www.python.org/">
-                        <img src="images/python-icon.png">
+                    <img class="tech-img" src="images/python-icon.png">
                     </a>
-                    <p>Python</p>
+                    <div>Python</div>
                 </div>
                 <div>
                     <a href="https://www.djangoproject.com/">
-                        <img src="images/django-icon.png">
+                    <img class="tech-img" src="images/django-icon.png">
                     </a>
-                    <p>Django</p>
+                    <div>Django</div>
                 </div>
                 <div>
-                    <a href="https://www.django-rest-framework.org/">
-                        <img src="images/djangorest-icon.png">
-                    </a>
-                    <p>Django REST</p>
+                    <img class="tech-img" src="images/sql-icon.svg">
+                    <div>SQL</div>
                 </div>
                 <div>
-                    <a href="https://www.sqlite.org/index.html">
-                        <img src="images/sqlite-icon.png">
+                    <a href="https://www.json.org/json-en.html">
+                    <img class="tech-img" src="images/json-icon.png">
                     </a>
-                    <p>SQLite</p>
+                    <div>JSON</div>
                 </div>
                 <div>
-                    <a href="https://www.postgresql.org/">
-                        <img src="images/postgresql-icon.svg">
+                    <a href="https://git-scm.com/">
+                    <img class="tech-img" src="images/git-icon.png">
                     </a>
-                    <p>PostgreSQL</p>
-                </div>            
-                <div>
-                    <a href="https://www.postman.com/">
-                        <img src="images/postman-icon.png">
-                    </a>
-                    <p>Postman</p>
-                </div>
-                <div>
-                    <a href="https://nodejs.org/en/">
-                        <img src="images/nodejs-icon.png">
-                    </a>
-                    <p>Node.js</p>
-                </div>
-                <div>
-                    <a href="https://pptr.dev/">
-                        <img src="images/puppeteer-icon.png">
-                    </a>
-                    <p>Puppeteer</p>
+                    <div>Git</div>
                 </div>
             </div>
         </div>
-        
-        <div>
+        <div id="contact" class="section">
             <hr/>
             <h2>Contact</h2>
-            <a class="anchor" id="contact"></a>
-            <hr class="lower-hr"/>
-            <div class="contact">
-                <div>chasef7031@gmail.com</div>
-                <div>
-                    <a href="https://github.com/chase-fite">github.com/chase-fite</a>
-                </div>
-                <div>
-                    <a href="http://linkedin.com/in/chase-fite/">linkedin.com/in/chase-fite/</a>
-                </div>
+            <div class="container center">chasef7031@gmail.com</div>
+            <div class="container center">
+                <a href="https://linkedin.com/in/chase-fite/">linkedin.com/in/chase-fite/</a>
             </div>
+            <div class="container center">
+                <a href="https://github.com/chase-fite/">github.com/chase-fite</a>
+            </div>
+            <div id="credit" class="container center">Background photo by Andy Holmes on Unsplash</div>
         </div>
     </div>
 
-    <script src="./scripts/main.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
