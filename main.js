@@ -1,27 +1,7 @@
 const setBanner = () => {
-    const bannerImg = document.getElementById("banner-img")
-
     document.getElementById("banner").style.height = `${window.innerHeight}px`
 
-    //if (window.innerWidth < 550 && window.innerHeight > 825) {
-        //document.getElementById("banner-img").src = "./walkway-1050x1575.png";
-    //} else if (window.innerWidth < 550) {
-        //document.getElementById("banner-img").src = "./walkway-550x825.png";
-    //} else if (window.innerWidth >= 550 && window.innerWidth <= 1050) {
-        //document.getElementById("banner-img").src = "./walkway-1050x1575.png";
-    //} else if (window.innerHeight > 900) {
-        //document.getElementById("banner-img").src = "./walkway-1950x1097-v4.png";
-    //} 
-
-    //if (window.innerHeight <= 800) {
-        //bannerImg.src = "./images/lake-1422x800.png";
-    //} else if (window.innerHeight <= 900) {
-        //bannerImg.src = "./images/lake-1600x900.png";
-    //} else if (window.innerHeight <= 1080) {
-        //bannerImg.src = "./images/lake-1920x1080.png";
-    //} else if (window.innerHeight <= 1440) {
-        //bannerImg.src = "./images/lake-2560x1440.png";
-    //} else if (window.innerHeight <= 
+    const bannerImg = document.getElementById("banner-img")
 
     if (window.innerWidth <= 420 && window.innerHeight <= 825) {
         bannerImg.src = "./images/lake-464x825.png";
@@ -32,7 +12,6 @@ const setBanner = () => {
     } else if (window.innerHeight <= 2160) {
         bannerImg.src = "./images/lake-3841x2160.png";
     }
-        
 }
 
 const setNavbar = () => {
@@ -43,7 +22,6 @@ const setNavbar = () => {
         document.getElementById("navbar").className = "";
         document.getElementById("navbar-mobile").className = "hidden";
     }
-        
 }
 
 const toggleDropdownMenu = () => {
