@@ -189,10 +189,14 @@ li {
     color: gray;
 }
 
+#experience > .container {
+    margin: 20px 0;
+}
+
 /*PROJECTS*/
 
 .project {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .project__title {
